@@ -212,6 +212,9 @@ a:hover{
     border-top-right-radius: 20px ;
     border-bottom-left-radius: 20px ;
 }
+.container .close:hover{
+    background-color: rgb(2, 14, 24);
+}
 .icon-mail{
     margin-left: -20px;
 }
