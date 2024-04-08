@@ -4,7 +4,7 @@
 }
 .bg{
     height: 100%;
-    width: auto;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,7 +38,7 @@ button#pop_up{
     background-color: transparent;
     backdrop-filter: blur(6px);
     border: 2px solid whitesmoke;
-    color:black;
+    color:rgb(255, 255, 255);
     font-weight: 800;
     font-size: 20px;
     margin-left: 100px;    
@@ -51,7 +51,7 @@ button#pop_up{
 button#pop_up:hover{
 background-color:  rgb(2, 14, 24);
 backdrop-filter: blur(10px);
-color: blue;
+color: rgb(253, 253, 253);
 }
 .log{
     align-items: end;
@@ -76,18 +76,24 @@ main{
     
 }
 .container{
-position: relative;
-width: 400px;
-height: 440px;
-background: rgba(219, 211, 196, 0.24);
-border: 2px solid rgba(0,0,0, .2);
-border-radius: 20px;
-backdrop-filter: blur(10px);
-box-shadow: 0 0 30px rgba(0,0,0,.5);
-justify-content: center;
-align-items: center;
-text-align: center;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: rgba(219, 211, 196, 0.24);
+    border: 2px solid rgba(0,0,0, .2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
 
+.container.show {
+    display: block; 
+    opacity: 1; 
 }
 input#mail{
     outline: none;
