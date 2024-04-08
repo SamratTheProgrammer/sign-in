@@ -7,8 +7,3 @@ signInBtn.onclick = function() {
 closeBtn.onclick = function() {
   modal.classList.remove('show');
 }
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.classList.remove('show');
-  }
-}
